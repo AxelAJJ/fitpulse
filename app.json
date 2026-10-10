@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "name": "FitPulse",
+    "slug": "fitpulse",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "fitpulse",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0B0D0F",
+    "icon": "./assets/icon.png",
+    "platforms": ["ios"],
+    "ios": {
+      "bundleIdentifier": "com.tuusuario.fitpulse",
+      "supportsTablet": false
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#0B0D0F",
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 160
+        }
+      ],
+      [
+        "expo-sensors",
+        {
+          "motionPermission": "FitPulse usa el podómetro y el sensor de movimiento del iPhone para contar tus pasos y estimar si caminas o corres durante una sesión."
+        }
+      ]
+    ]
+  }
+}
